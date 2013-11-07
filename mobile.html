@@ -12,25 +12,33 @@
 
 <!-- Homepage -->
 <div data-role="page" id="home">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Colin's Fail Videos</h1>
+	<div data-role="header" data-position="fixed" data-theme="c">
+		<h1>Digital Art</h1>
         <div data-role="navbar">
             <ul>
                 <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
-                <li><a href="#highlight" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flip">Videos</a></li>
+                <li><a href="#highlight" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flow">Videos</a></li>
             </ul>
         </div><!-- /navbar -->
 	
     </div><!-- /header -->
     
 	<div data-role="content">
-        <h2>Homepage</h2>    
+		<p>A collection of videos showing Digital Art and its process or techniques</p>
+        <h2>Featured Video</h2>
+       
+       <a href="#popupVideo" data-rel="popup"><img src="img/featvid.jpg"></a>
+     
+	   <div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+		   <iframe width="420" height="315" src="//www.youtube.com/embed/XlKh9OK2HIA?rel=0" frameborder="0"></iframe>
+		   </div>
+        
+          
 	</div><!-- /content -->
 
 </div><!-- /page -->
 
-<!-- Highlighted Videos -->
+<!-- Videos Page -->
 <div data-role="page" id="highlight">
     
         <div data-role="navbar">
@@ -41,16 +49,14 @@
         </div><!-- /navbar -->
     
 	<div data-role="content">
-        <h2>Highlighted Videos</h2>
-        <div class="ui-grid-a">
-    <div class="ui-block-a"><div class="ui-bar ui-bar-e">
-        <iframe src="//player.vimeo.com/video/71432357" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/71432357">Invocation</a> from <a href="http://vimeo.com/lupusfilms">Lupus Films</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-        </div></div>
-    <div class="ui-block-b"><div class="ui-bar ui-bar-e">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/VBmCJEehYtU" frameborder="0" allowfullscreen></iframe>
-        </div></div>
-</div><!-- /grid-a -->
-        
+        <h2>Videos</h2>
+        <div class="ui-grid-a ui-bar ui-bar-c">
+			<div class="ui-block-a">
+				<iframe width=100%  src="//www.youtube.com/embed/lJIjti5tzBw?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="ui-block-b">
+				<iframe width=100% src="//www.youtube.com/embed/lJIjti5tzBw?rel=0" frameborder="0" allowfullscreen></iframe>			</div>
+		</div><!-- /grid-a -->        
 	</div><!-- /content -->
 
 </div><!-- /page -->    
