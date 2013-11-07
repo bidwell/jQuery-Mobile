@@ -11,13 +11,13 @@
 
 
 <!-- Homepage -->
-<div data-role="page" id="home">
-	<div data-role="header" data-position="fixed" data-theme="c">
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header" data-position="fixed">
 		<h1>Digital Art</h1>
         <div data-role="navbar">
             <ul>
                 <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
-                <li><a href="#highlight" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flow">Videos</a></li>
+                <li><a href="#videos" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flow">Videos</a></li>
             </ul>
         </div><!-- /navbar -->
 	
@@ -27,11 +27,17 @@
 		<p>A collection of videos showing Digital Art and its process or techniques</p>
         <h2>Featured Video</h2>
        
-       <a href="#popupVideo" data-rel="popup"><img src="img/featvid.jpg"></a>
+       <a href="#popupVideo" data-rel="popup"><img src="http://placehold.it/350x150"></a>
      
 	   <div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
-		   <iframe width="420" height="315" src="//www.youtube.com/embed/XlKh9OK2HIA?rel=0" frameborder="0"></iframe>
+		   <iframe src="http://player.vimeo.com/video/41135183" width="497" height="298" seamless></iframe>
 		   </div>
+           
+       <a href="#popupVideo2" data-rel="popup"><img src="http://placehold.it/350x150"></a>
+     
+	   <div data-role="popup" id="popupVideo2" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+		   <iframe src="http://player.vimeo.com/video/39786169" width="497" height="298" seamless></iframe>
+		   </div>     
         
           
 	</div><!-- /content -->
@@ -39,23 +45,23 @@
 </div><!-- /page -->
 
 <!-- Videos Page -->
-<div data-role="page" id="highlight">
+<div data-role="page" id="videos" data-theme="a">
     
         <div data-role="navbar">
             <ul>
-                <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
-                <li><a href="#highlight" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flip">Videos</a></li>
+                <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="flow">Home</a></li>
+                <li><a href="#videos" class="ui-btn-active ui-state-persist" data-icon="star">Videos</a></li>
             </ul>
         </div><!-- /navbar -->
     
 	<div data-role="content">
         <h2>Videos</h2>
-        <div class="ui-grid-a ui-bar ui-bar-c">
+        <div class="ui-grid-a ui-bar ui-bar-c" data-theme="a">
 			<div class="ui-block-a">
-				<iframe width=100%  src="//www.youtube.com/embed/lJIjti5tzBw?rel=0" frameborder="0" allowfullscreen></iframe>
+				 <iframe src="http://player.vimeo.com/video/39786169" width="100%" seamless></iframe>
 			</div>
 			<div class="ui-block-b">
-				<iframe width=100% src="//www.youtube.com/embed/lJIjti5tzBw?rel=0" frameborder="0" allowfullscreen></iframe>			</div>
+				<iframe src="http://player.vimeo.com/video/39786169" width="100%" seamless></iframe>			</div>
 		</div><!-- /grid-a -->        
 	</div><!-- /content -->
 
