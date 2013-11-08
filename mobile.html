@@ -10,21 +10,66 @@
 <body>
 
 
-<!-- Start of first page -->
-<div data-role="page" id="foo">
-
-	<div data-role="header">
-		<h1>MOBILE VERSION</h1>
-	</div><!-- /header -->
-
-	<h1>Mobile page</h1>
+<!-- Homepage -->
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Digital Art</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+                <li><a href="#videos" class="ui-btn-active ui-state-persist" data-icon="star" data-transition="flow">Videos</a></li>
+            </ul>
+        </div><!-- /navbar -->
+	
+    </div><!-- /header -->
     
+	<div data-role="content">
+		<p>A collection of videos showing Digital Art and its process or techniques. As well as showcase videos featuring the work of profesional digital artists.</p>
+        <h2>Featured Video</h2>
+       
+       <a href="#popupVideo" data-rel="popup" data-role="button">Watch Featured video</a>
+     
+	   <div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+		   <iframe src="http://player.vimeo.com/video/59246310" width="497" height="298" seamless></iframe>
+		   </div>
+           
+       <img src="img/feature.jpg"/> 
+       <h2>Dabarti Showcase video screenshot</h2>      
+          
+	</div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
 </div><!-- /page -->
 
+<!-- Videos Page -->
+<div data-role="page" id="videos" data-theme="a">
+	<div data-role="header" data-position="fixed">
+    	<h2>Videos</h2>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home" data-transition="flow">Home</a></li>
+            <li><a href="#videos" class="ui-btn-active ui-state-persist" data-icon="star">Videos</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+	<div data-role="content">
+
+    	<ul data-role="listview" data-filter="true">
+    		<li data-role="listdivider">Painting tutorial</li>
+        	<li><iframe src="http://player.vimeo.com/video/39786169" width="497" height="298" seamless></iframe></li>
+        	<li data-role="listdivider">Shading techniques</li>
+        	<li><iframe src="http://player.vimeo.com/video/25401242" width="497" height="298" seamless></iframe></li>
+        	<li><iframe src="http://player.vimeo.com/video/32510489" width="497" height="298" seamless></iframe></li>
+        	<li data-role="listdivider">showcase</li>
+        	<li><iframe src="http://player.vimeo.com/video/59246310" width="497" height="298" seamless></iframe></li>
+        	
+        	
+    	</ul>
+       	        
+	</div><!-- /content -->
+
+</div><!-- /page -->    
+
+    
     
     
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
